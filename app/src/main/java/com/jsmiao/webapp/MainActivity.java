@@ -3,6 +3,7 @@ package com.jsmiao.webapp;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.view.WindowManager;
 
 import com.jsmiao.webapp.controls.MWebView;
 
@@ -13,6 +14,8 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        // 设置页面全屏，隐藏状态栏
+        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
 
         // 获取控件
         mWebView = (MWebView) findViewById(R.id.mWebView);

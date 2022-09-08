@@ -15,6 +15,7 @@
     <style name="Theme.Webapp.NoActionBar">
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
-        <item name="android:statusBarColor">@color/purple_200</item>
+<!--        修改状态栏颜色-->
+<!--        <item name="android:statusBarColor">@color/purple_200</item>-->
     </style>
 </resources>
